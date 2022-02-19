@@ -1,0 +1,98 @@
+
+
+
+
+h2 { color: white;font-size: 3rem;}
+h1 { background: color: black;}
+
+
+p {
+  color: white;
+width: 800px;
+margin:0;
+ 
+}
+html {
+  background-color: #00539F;
+}
+body {
+  width:800px
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+img {
+  display: block;
+  margin: 0 auto;
+
+width:80%;
+
+}
+
+input {
+
+    border: none;
+   high:10%;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contactSections {
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.leftSection { 
+    display: flex;
+    justify-content: flex-start;
+   
+}
+
+.leftSection h1 {
+    font-size: 3rem;
+    margin: 1em;
+}
+
+.leftSection span {
+    display: block;
+}
+
+.rightSection {
+    display: flex;
+    flex-direction: column;
+padding: 4em 6em;
+
+}
+@media only screen and (max-width: 1000px) {
+.title span{
+display:block;
+}
+
+@media only screen and (max-width: 800px) {
+
+.leftSection h1{
+text-align:right;}
+.rightSection {
+    display: flex;
+    flex-direction: column;
+padding: 0em 0em;
+}
+@media only screen and (max-width: 500px) {
+.contactSections {
+flex-direction: column;}
+.leftSection h1{
+text-align:center;font-size: 2rem;}
+.leftSection span{display:inline-block}
+
+}
