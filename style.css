@@ -1,0 +1,108 @@
+h1 { background: color: black;font-size: 2rem; text-align:center; }
+h2 { color: white;font-size: 2rem; text-align:center}
+h3 { background-color:black; font-size: 2rem;text-align:center; color:orange }
+p {display: none;font-size: 2rem;text-align:center;color: white}
+h4 {display: none;font-size: 1.5rem;text-align:center;color: black}
+
+
+
+html {
+  background-color: #00539F;
+}
+body {
+  width:10px
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+img {
+  display: flex;
+  margin: 0 auto;
+width:100%;
+}
+
+input {
+    border: none;
+   high:10%;
+}
+.rightSection {
+display: flex;
+flex-direction: column;
+margin-bottom:20px;
+}
+
+
+.contactSections {
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+}
+/* zdeklarowany projekt SMARTFONY – UKŁAD PIONOWY I POZIOMY*/
+
+@media only screen and (min-width: 480px) {
+.rightSection {
+margin:0px 50px 50px;
+justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+.rightSection {
+width: 400px;
+}
+}
+
+/* IPADY, TABLETY – UKŁAD PIONOWY I POZIOMY */
+@media only screen and (min-width: 700px) {
+.contactSections {
+flex-direction: row;}
+.rightSection {
+margin:0px 0px 20px }
+.logo h3{
+font-size: 3rem
+}
+
+@media only screen and (min-width: 760px) {
+.rightSection{
+width: 400px;}
+.leftSection span{
+display: block;}
+.leftSection h1{
+padding: 0px 50px 50px 20px;}
+.img {
+width: 675px}
+}
+/*LAPTOPY */
+@media only screen and (min-width: 800px) {
+.hello p{
+display: flex;
+justify-content: right;
+position: absolute;
+right: 50px;
+top: 200px;}
+}
+/* KOMPUTERY STACJONARNE*/
+@media only screen and (min-width: 850px) {
+.hello p{
+top: 175px;
+font-size: 3rem}
+}
+
+/* DUŻE EKRANY - TV*/
+@media only screen and (min-width: 1100px) {
+.info h4{
+display: flex;
+justify-content: right;
+position: absolute;
+width: 200px;
+right: 150px;
+top: 200px;
+}
+}
+
+
+
+
+
+
+
